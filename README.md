@@ -12,21 +12,17 @@ COSMAC CDP1802 Single Board Computer
 
 
 ## Spec  
-- S-RAM 512MBytes  
--- RAMメモリ空間は後半 32KBytes  
--- AS6C4008-55PCN (512KW×8bit)2チップ  
--- 出力ポートのアクセスで、後半512KをROM/RAM切り替え  
+- RAMは、メモリ空間の後半 32KBytes  
+- S-RAM,  AS6C4008-55PCN (512KW×8bit)1チップ使用  
 
-- ROM 64Bytes  
--- SST 27SF512(EEPROM)  
+- ROMは、メモリ空間の前半 32K  
+- EEPROM,  SST 27SF512(64KW×8bit)) 使用  
 -- 27C512互換であれば使用可能、2764あたりからそのまま差し込めるはず  
--- メモリ空間の前半 32K は、ROM  
-
 
 - SIO TTLレベル  
 -- ソフトウェア実現  
 -- 秋月で販売されている FTDI USBシリアル変換ケーブル(5V) が直接 差せる  
 --  https://akizukidenshi.com/catalog/g/g105841/    
 
-- Crystal EXO-3, 14.31818 MHz の8分周  
+- Crystal発振器 EXO-3, 14.31818 MHz の8分周  
 -- CPU は、約 1.7898 MHz で動作  
