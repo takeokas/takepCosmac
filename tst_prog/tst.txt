@@ -1,0 +1,3 @@
+read the SW
+SW = Hi then set Q-output Lo else set Q to Hi.
+  
