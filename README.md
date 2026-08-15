@@ -19,6 +19,10 @@ COSMAC CDP1802 Single Board Computer
 -- EEPROM,  SST 27SF512(64KW×8bit)) 使用  
 -- 27C512互換であれば使用可能、2764あたりからそのまま差し込めるはず  
 
+- GAL16V8 使用  
+--  <a href="takepCosmacGal/takepCosmac.pld"> 論理(ソース) </a>
+--  <a href="takepCosmacGal/takepCosmac.jed"> JDECファイル </a>
+
 - SIO TTLレベル  
 -- ソフトウェア実現  
 -- 秋月で販売されている FTDI USBシリアル変換ケーブル(5V) が直接 差せる  
