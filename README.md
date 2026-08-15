@@ -13,10 +13,10 @@ COSMAC CDP1802 Single Board Computer
 
 ## Spec  
 - RAMは、メモリ空間の後半 32KBytes  
-- S-RAM,  AS6C4008-55PCN (512KW×8bit)1チップ使用  
+-- S-RAM,  AS6C4008-55PCN (512KW×8bit)1チップ使用  
 
 - ROMは、メモリ空間の前半 32K  
-- EEPROM,  SST 27SF512(64KW×8bit)) 使用  
+-- EEPROM,  SST 27SF512(64KW×8bit)) 使用  
 -- 27C512互換であれば使用可能、2764あたりからそのまま差し込めるはず  
 
 - SIO TTLレベル  
