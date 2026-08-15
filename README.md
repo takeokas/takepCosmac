@@ -9,6 +9,7 @@ COSMAC CDP1802 Single Board Computer,  1802 MemberChip Card互換
 <img src=takepcosmac.png width=200 >
 <img src=takepcosmac-r.png width=200 >
 
+**※74HC573 の電源に +5V を接続すること!!(重要)**  
 
 
 ## Spec  
