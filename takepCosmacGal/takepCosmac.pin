@@ -1,0 +1,25 @@
+
+
+ Pin # | Name     | Pin Type
+-----------------------------
+   1   | Clock    | Clock
+   2   | ADR15    | Input
+   3   | /RST     | Input
+   4   | /MRDN    | Input
+   5   | /MWRN    | Input
+   6   | TPB      | Input
+   7   | N2       | Input
+   8   | N1       | Input
+   9   | N0       | Input
+  10   | GND      | GND
+  11   | /OE      | /OE
+  12   | /XADR15  | Output
+  13   | /ROM0CE  | Output
+  14   | /RAM0CE  | Output
+  15   | NC       | NC
+  16   | N7W      | Output
+  17   | NC       | NC
+  18   | ROM0SEL  | Output
+  19   | IOWR     | Output
+  20   | VCC      | VCC
+

@@ -1,0 +1,41 @@
+GAL16V8    ;   first line : used GAL GAL16R8
+tkCosmac ;   second line: any text (max. 8 char.)
+; takepCosmac3 2026/APR/27
+
+Clock   ADR15    /RST     /MRDN      /MWRN  TPB    N2  N1   N0    GND
+/OE     /XADR15  /ROM0CE  /RAM0CE    NC    N7W    NC  ROM0SEL  IOWR  VCC
+
+;IOWR = /MRDN * TPB * (N0 + N1 + N2)
+IOWR = /MRDN*TPB*N0 + /MRDN*TPB*N1 + /MRDN*TPB*N2
+
+;N7W= N0*N1*N2*IOWR
+N7W= N0*N1*N2*/MRDN*TPB
+
+; ROM0SEL holding F.F, ext RST then 1 , IOWR*(N==7) then 0,
+ROM0SEL.R = RST + /RST*/N7W*ROM0SEL
+
+;;ROM0SEL.R = IOWR*D7 + /IOWR*ROM0SEL ; ROM0SEL hold F.F
+;;ROM0SEL.R = IOWR*D7*RST + /IOWR*ROM0SEL*RST + /RST ; ROM0SEL hold F.F,/RST->1
+;;ROM0SEL.R = IOWR*D7*OE + /IOWR*ROM0SEL*OE + /OE ; ROM0SEL hold F.F,/RST->1
+
+;ROM0CE =  (TPB & /(MWRN & MRDN))
+;       =  (TPB & (/MWRN + /MRDN))
+;       =  (TPB & /MWRN + TPB & /MRDN)
+ROM0CE = TPB * /MWRN + TPB * /MRDN
+
+;/XADR15 = /(ROM0SEL * /ADR15); /XADR15=/rom0OE
+XADR15 = ROM0SEL * /ADR15   ; /XADR15=/rom0OE
+
+RAM0CE = TPB * /XADR15
+
+
+DESCRIPTION
+
+;;IOWR = (~(MRD_N)) & TPB & (N0 | N1 | N2)
+
+this is for takepCosmac.
+registered outputs are signed with the postfix .R
+
+;; Clock signal while
+
+
