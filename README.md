@@ -18,6 +18,9 @@ COSMAC CDP1802 Single Board Computer,  1802 MemberChip Card互換
 - ROMは、メモリ空間の前半 32K  
 -- EEPROM,  SST 27SF512(64KW×8bit)) 使用  
 -- 27C512互換であれば使用可能、2764あたりからそのまま差し込めるはず  
+-- ROMの通常アクセスは、前半 32KBytes (0〜0x7FFF)であるが…  
+-- ROMの後半 32KBytes (0x8000〜0xFFFF)は、RAMとかぶっているが、IO readアクセスで読み出し可能  
+--- ROMの後半を読み出して、RAMに転送することができる!  
 
 - Crystal発振器 EPSON EXO-3, 14.31818 MHz の8分周  
 -- CPU は、約 1.7898 MHz で動作  
@@ -35,4 +38,4 @@ COSMAC CDP1802 Single Board Computer,  1802 MemberChip Card互換
 - <a href="https://sunrise-ev.com/photos/1802/1802me2-manual.pdf" target=_blank> 1802 MemberChip Card マニュアルPDF</a> の「Banked Memory」の章(P.21)に,データシートにない、メチャクチャな仕様に基づいて動かす(未定義命令も使用)と書いてあって…  
 - <a href="https://hackaday.io/project/190289-1802-memberchip-card" target=_blank> 1802 MemberChip Card in Hackaday,io </a> にも解説がある  
 <img src=https://cdn.hackaday.io/images/6775511696965099336.png width=320>
-
+-- ROM
