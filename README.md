@@ -30,11 +30,3 @@ COSMAC CDP1802 Single Board Computer
 
 - Crystal EXO-3, 14.31818 MHz の8分周  
 -- CPU は、約 1.7898 MHz で動作  
-
-## ボード  
-
-
-## 回路
-26/MAR/20 「Kernel/VM探検隊＠つくば No3」での、発表資料  
---  https://www.slideshare.net/slideshow/tht-8088-single-board-computer-with-amd-8088-bought-at-junk-shop-in-1989/286593537?utm_source=clipboard_share_button&utm_campaign=slideshare_make_sharing_viral_v2&utm_variation=control&utm_medium=share
--   
