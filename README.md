@@ -20,8 +20,8 @@ COSMAC CDP1802 Single Board Computer
 -- 27C512互換であれば使用可能、2764あたりからそのまま差し込めるはず  
 
 - GAL16V8 使用  
---  <a href="takepCosmacGal/takepCosmac.pld"> 論理(ソース) </a>
---  <a href="takepCosmacGal/takepCosmac.jed"> JDECファイル </a>
+-- <a href="takepCosmacGal/takepCosmac.pld"> 論理(ソース) </a>  
+-- <a href="takepCosmacGal/takepCosmac.jed"> JDECファイル </a>  
 
 - SIO TTLレベル  
 -- ソフトウェア実現  
