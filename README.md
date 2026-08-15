@@ -6,8 +6,8 @@ COSMAC CDP1802 Single Board Computer
 <a href="https://hackaday.io/project/190289-1802-memberchip-card" target=_blank> 1802 MemberChip Card in Hackaday,io </a>
 
 
-<img src=https://github.com/takeokas/takep8088/blob/main/front.jpg width=200 >
-<img src=https://github.com/takeokas/takep8088/blob/main/back.jpg width=200 >
+<img src=takepcosmac.png width=200 >
+<img src=takepcosmac-r.png width=200 >
 
 
 
