@@ -1,0 +1,19 @@
+
+ASM= ../Asm-02-main/asm02
+
+all: aho.hex aho.prg tst.hex tst.prg 
+
+tst.hex: tst.asm
+	$(ASM) -i  tst.asm
+	cp tst.hex ~/tmp
+
+tst.prg: tst.asm
+	$(ASM)   tst.asm
+
+
+aho.hex: aho.asm
+	$(ASM) -i  aho.asm
+	cp aho.hex ~/tmp
+
+aho.prg: aho.asm
+	$(ASM)   aho.asm
