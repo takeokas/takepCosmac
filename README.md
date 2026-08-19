@@ -31,9 +31,21 @@ COSMAC CDP1802 Single Board Computer,  1802 MemberChip Card互換
 -- <a href="takepCosmacGal/takepCosmac.jed"> JDECファイル </a>  
 
 - SIO TTLレベル  
--- ソフトウェア実現  
+-- ソフトウェア実現.4800bps が調子いい  
 -- 秋月で販売されている FTDI USBシリアル変換ケーブル(5V) が直接 差せる  
 --  https://akizukidenshi.com/catalog/g/g105841/    
+
+## 超簡略 使用方法 説明  
+- シリアル・ラインに端末を接続する。ソフトウェアでSIO処理を行っているので、4800bpsが限界ぽい  
+- COSMACをリセットする。リセット後、何も出力されない。シリアル端末で「リターン」を押下(\r を送信)
+- MC21ANSA が自動で、通信速度を判定。起動メッセージを出力
+- 入力する英文字は、大文字のみ  
+- 「H」(大文字)で、help が出力される。
+- 「P」でアドベンチャーゲーム。詳しくは<a href="https://sunrise-ev.com/photos/1802/1802me2-manual.pdf" target=_blank> 1802 MemberChip Card マニュアルPDF</a> の P.15  
+- 「B」で BASIC インタープリタ。  
+  -- 起動直後に「Cold start」か尋ねられるので、「C」でコールド・スタート  
+  -- 「PR」 で「PRINT」の省略形。他は、一般的な BASIC と同様  
+  -- <a href="https://sunrise-ev.com/MembershipCard/BASIC3v11user.pdf"> BASIC のマニュアル </a>  
 
 ## 1802 MemberChip Card の特殊なROMチップ・セレクトについて  
 - <a href="https://sunrise-ev.com/photos/1802/1802me2-manual.pdf" target=_blank> 1802 MemberChip Card マニュアルPDF</a> の「Banked Memory」の章(P.21)に説明がある  
